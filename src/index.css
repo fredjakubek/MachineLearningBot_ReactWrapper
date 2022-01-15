@@ -6,6 +6,12 @@ body {
     background-color: #fff;
 }
 
+@media screen and (display-mode: standalone) {
+    header {
+        height: 88px !important;
+    }
+}
+
 .main-container {
     width: 90%;
     justify-content: center;
@@ -378,10 +384,14 @@ body {
     line-height: 120%;
     box-shadow: 0px 20px 50px 0px #12112714;
     text-align: center;
-    height: 130px;
+    height: 170px;
     width: 90%;
     margin: 0 auto;
     color: #000000;
+}
+
+.babysize_title{
+    padding-top: 20px;
 }
 
 .login-bottom-text {
@@ -592,6 +602,10 @@ body {
     margin-top: 33px;
 }
 
+.no-article{
+    text-align: center;
+    margin-top: 33px;
+}
 .div1 {
     padding: 6px 16px;
     text-align: center;
@@ -926,19 +940,22 @@ body {
 .insta-header {
     display: flex;
     align-items: center;
-    margin: 10px 0;
-    margin: 5px 20px;
+    margin: 15px 5px 10px 15px; 
 }
 
 .insta-header img {
     width: 40px;
-    margin-left: 5px;
+    margin-left: 10px;
+}
+
+.insta-header_avatarLogo{
+    margin-left: 3px;
 }
 
 .insta-search {
-    width: 290px;
+    width: 90%;
     background: #ececec;
-    border-radius: 20px;
+    border-radius: 15px;
     height: 36px;
     display: flex;
     align-items: center;
@@ -1058,17 +1075,17 @@ body {
 }
 
 .insta-li ul li {
-    margin: 10px 10px;
+    margin: 10px 8px;
     font-family: Roboto;
     font-style: normal;
     font-size: 20px;
     line-height: 120%;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ececec;
-    width: 100px !important;
+    width: 140px !important;
     height: 36px;
     padding: 5px 15px;
 }

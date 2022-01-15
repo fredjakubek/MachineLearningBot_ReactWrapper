@@ -36,8 +36,7 @@ export default function Comments({
               }
             }}
           >
-            View all {comments.length}
-            comments
+            View all {comments.length} comments
           </button>
         )}
         {/* <p className="text-gray-base uppercase text-xs mt-2">

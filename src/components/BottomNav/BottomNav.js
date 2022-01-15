@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
+import SportsBarOutlinedIcon from '@mui/icons-material/SportsBarOutlined';
 import { setIsHomeActive, setIsTodoActive, setIsInstaActive } from '../../store/Slices/BottomSlice'
 import '../../index.css'
 
@@ -34,7 +35,7 @@ function BottomNav() {
             <Link to="/">
                 <div onClick={handleHomeClick} className={`bottom-nav-item ${isHomeActive && 'active'} `}>
                     <HomeOutlinedIcon />
-                    <span>Home</span>
+                    <span>Today</span>
                 </div>
             </Link>
             <Link to="/todos">
@@ -46,7 +47,7 @@ function BottomNav() {
             <Link to="/instascreen">
                 <div onClick={handleInstaClick} className={`bottom-nav-item ${isInstaActive && 'active'} `}>
                     <PermIdentityIcon />
-                    <span>Posts</span>
+                    <span>Cooler Talk</span>
                 </div>
             </Link>
         </div>

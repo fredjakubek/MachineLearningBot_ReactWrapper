@@ -160,7 +160,14 @@ function App() {
   }, [week]);
 
   return (
-    <div>
+    <div style={{ WebkitTapHighlightColor:"transparent"}}>
+      <link rel="manifest" href="/site.webmanifest" />
+      <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent"
+      />
+      <meta name="viewport" content="initial-scale=1, viewport-fit=cover, user-scalable=no" />
+
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />

@@ -91,7 +91,7 @@ export default function TodoScreen() {
     <div className="todo-main-div">
       <div className="suggest">
         <div className={`div1 ${isActive && "activeScreen"}`}>
-          <button className="button-suggest">suggested</button>
+          <button className="button-suggest">Suggested</button>
         </div>
         <div className="div2">
           <Link to="/task">

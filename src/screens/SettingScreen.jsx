@@ -7,6 +7,7 @@ import { setDoc, doc } from "firebase/firestore";
 import { db } from '../config/Firebase'
 import { setUserId, setUserName, setEmailAddress, setFullName, setPregnancyDueDate, setUserTodoss, setBabyName, setBabyGender } from '../store/Slices/UserSlice'
 import { signOut } from "firebase/auth";
+import AccountCircleTwoToneIcon from '@mui/icons-material/AccountCircleTwoTone';
 
 export default function SettingScreen() {
     const dispatch = useDispatch()
@@ -15,9 +16,9 @@ export default function SettingScreen() {
     const menu = [
         { title: "Settings", redirectTo: "/" },
         { title: "FAQ", redirectTo: "/" },
-        { title: "Tell a freind", redirectTo: "/" },
-        { title: "privacy policy", redirectTo: "/privacypolicy" },
-        { title: "Terms and Condition", redirectTo: "/" }
+        { title: "Tell A Friend", redirectTo: "/" },
+        { title: "Privacy Policy", redirectTo: "/privacypolicy" },
+        { title: "Terms And Condition", redirectTo: "/" }
     ]
 
     const handleSexChange = (e) => {
@@ -80,7 +81,10 @@ export default function SettingScreen() {
                     </Link>
                 </div>
                 <div className='Profile-Image'>
+                    <AccountCircleTwoToneIcon style={{ height: "50px", width: "50px" }}/>
+                    {/* Commented out as it was replaced with Material UI Icon now
                     <img src='https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png' />
+                    */}
                 </div>
                 <div className='Profile-username'>
                     {user.username}
@@ -122,7 +126,7 @@ export default function SettingScreen() {
 
                 </div>
                 <div className='setting-items'>
-                    <h3>Baby's name</h3>
+                    <h3>Baby's Name</h3>
                     <input type="text" placeholder='Type Here ...' value={user.pregnancy_babyName && user.pregnancy_babyName} onChange={handleNameChange} />
 
                 </div>

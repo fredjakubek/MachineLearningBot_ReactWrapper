@@ -9,6 +9,8 @@ import { setSuggestedWeek } from "../store/Slices/WeekSlice";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { setWeek, setDay } from "../store/Slices/WeekSlice";
 import { db } from "../config/Firebase";
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import AccountCircleTwoToneIcon from '@mui/icons-material/AccountCircleTwoTone';
 
 function HomeScreen() {
   const currentDate = useRef();
@@ -122,8 +124,7 @@ function HomeScreen() {
 
   return (
     <div className="flex-1">
-      <div className="flex flex-row justify-between margin10">
-        <div className="none"></div>
+      <div className="flex flex-row justify-center margin10">
         <div className="flex flex-row week">
           <div>
             <i
@@ -143,18 +144,21 @@ function HomeScreen() {
             ></i>
           </div>
         </div>
-        <div>
-          <Link to="/settingscreen">
-            <img
-              className="avatar-img"
-              src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
-              alt="avatar"
-            />
-          </Link>
-        </div>
       </div>
-      {/* calendar */}
+      <div className="flex-1">
+          <Link to="/settingscreen">
+              <AccountCircleOutlinedIcon style={{ width: 40, height: 40 }} />
+              {/* Commented out as it was replaced with Material UI Icon now
+              <img
+                className="avatar-img"
+                src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                alt="avatar"
+              />
+              */}
+            </Link>
+        </div>
 
+      {/* calendar */}
       <div className="calenderWrapper">
         <div className="calnder">
           {DAYS.map((e, i) => {
@@ -189,8 +193,8 @@ function HomeScreen() {
           <img src={baby?.baby_fruiteImg} alt="pic" />
         </div>
         <div className="babysize">
-          <div>
-            <p>Your Baby's Size</p>
+          <div className="babysize_title">
+            Your Baby's Size
           </div>
           <div className="main">
             <div className="lenght-main">
@@ -219,7 +223,7 @@ function HomeScreen() {
         </div>
 
         <div className="weekly-outlook">
-          <h1>Your Weekly Outlook</h1>
+          <h1>Your Daily Summary</h1>
         </div>
         {blogs.length > 0 ? (
           blogs?.map((blog, index) => {
@@ -231,7 +235,7 @@ function HomeScreen() {
           })
         ) : (
           <>
-            <p>No Article Found For Day {selected}</p>
+            <div className="no-article">No Article Found For Day {selected}</div>
             {/* <div className="loader-container">
               <div className="loader"></div>
             </div> */}

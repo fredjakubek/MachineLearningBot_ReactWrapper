@@ -150,7 +150,7 @@ export default function Login() {
 
           <div className="remember">
             <div>
-              <p>remember me</p>
+              <p>Find Out More</p>
             </div>
           </div>
 

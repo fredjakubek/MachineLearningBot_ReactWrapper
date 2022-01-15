@@ -75,7 +75,7 @@ export default function SignUp() {
           </div>{" "}
           {/* login heading  */}{" "}
           <div>
-            <h1 className="log-in">SignUp </h1>{" "}
+            <h1 className="log-in">SignUp</h1>{" "}
           </div>{" "}
         </div>
         <div className="div-2">
@@ -118,7 +118,7 @@ export default function SignUp() {
           {/* remember me */}
           <div className="remember">
             <div>
-              <p> remember me </p>{" "}
+              <p> Find Out More</p>{" "}
             </div>{" "}
           </div>
           {/* log-in button */}
@@ -140,7 +140,7 @@ export default function SignUp() {
           <Link to="/">
             <p className="text-center underline create-an-acc">
               {" "}
-              i 've Already Account
+              I Already Have An Account
             </p>{" "}
           </Link>
         </div>{" "}
