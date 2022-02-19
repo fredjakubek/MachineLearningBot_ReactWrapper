@@ -14,7 +14,7 @@ export default function SettingScreen() {
     const navigate = useNavigate()
     const user = useSelector((state) => state.user)
     const menu = [
-        { title: "Settings", redirectTo: "/" },
+        { title: "Settings", redirectTo: "/landingpage" },
         { title: "FAQ", redirectTo: "/" },
         { title: "Tell A Friend", redirectTo: "/" },
         { title: "Privacy Policy", redirectTo: "/privacypolicy" },

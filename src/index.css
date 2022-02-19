@@ -21,7 +21,6 @@ body {
 
 .logo-main {
     margin-top: 55px !important;
-    background-color: black;
     margin: 0 auto;
     line-height: 100px;
     width: 120px;
@@ -122,7 +121,6 @@ body {
 .log-in-button {
     font-family: "Roboto", sans-serif;
     width: 90%;
-    color: #212529;
     border: 1px solid rgb(206, 206, 206);
     font-size: 18px !important;
     font-style: normal;
@@ -134,7 +132,7 @@ body {
     margin-bottom: 5px !important;
     padding: 14.5px 10px;
     margin: 0 auto;
-    background-color: black;
+    background-color: #8eaebd;
     color: white !important;
     border-radius: 10px;
     margin-top: 10px;
@@ -150,7 +148,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 16px;
-    color: #212529;
+    color: #8eaebd;
 }
 
 .align {

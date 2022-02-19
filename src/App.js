@@ -13,6 +13,7 @@ import TaskScreen from "./screens/TaskScreen";
 import SettingScreen from "./screens/SettingScreen";
 import PrivacyPolicy from "./screens/PrivacyPolicy";
 import InstaScreen from "./screens/InstaScreen";
+import LandingPage from "./screens/LandingPage";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { setBlogs } from "./store/Slices/BlogSlice";
 import { setBaby } from "./store/Slices/BabySlice";
@@ -182,8 +183,8 @@ function App() {
         <Route
           path="/"
           element={
-            <PrivateRoute redirectTo="/login">
-              <HomeScreen />
+            <PrivateRoute redirectTo="/">
+              <LandingPage />
             </PrivateRoute>
           }
         />
@@ -224,6 +225,14 @@ function App() {
           element={
             <PrivateRoute redirectTo="/login">
               <PrivacyPolicy />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/landingpage"
+          element={
+            <PrivateRoute redirectTo="/login">
+              <LandingPage />
             </PrivateRoute>
           }
         />

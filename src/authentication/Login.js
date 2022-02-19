@@ -19,6 +19,7 @@ import {
   setBabyGender,
 } from "../store/Slices/UserSlice";
 import "../index.css";
+import Logo from '../images/icons/apple-touch-icon.png';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -103,9 +104,9 @@ export default function Login() {
       <div className="border">
         <div className="div-1">
           <div className="logo-main">
-            <div className="logo">
-              <i className="fas fa-shopping-bag"></i>
-            </div>
+              <Link to="/landingpage">
+              <img src={Logo}/>
+              </Link>
           </div>
 
           {/* login heading  */}
