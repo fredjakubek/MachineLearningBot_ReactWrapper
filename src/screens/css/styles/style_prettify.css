@@ -11496,8 +11496,8 @@ progress:not([value]) {
 		top: 0;
 		z-index: 1
 	}
-	.u-sticky\@xs-only.u-sticky\@xs-only: :before,
-	.u-sticky\@xs-only.u-sticky\@xs-only: :after {
+	.u-sticky\@xs-only.u-sticky\@xs-only:before,
+	.u-sticky\@xs-only.u-sticky\@xs-only:after {
 		content: '';
 		display: table
 	}
@@ -11523,8 +11523,8 @@ progress:not([value]) {
 		top: 0;
 		z-index: 1
 	}
-	.u-sticky\@s.u-sticky\@s: :before,
-	.u-sticky\@s.u-sticky\@s: :after {
+	.u-sticky\@s.u-sticky\@s:before,
+	.u-sticky\@s.u-sticky\@s:after {
 		content: '';
 		display: table
 	}
@@ -11550,8 +11550,8 @@ progress:not([value]) {
 		top: 0;
 		z-index: 1
 	}
-	.u-sticky\@s-only.u-sticky\@s-only: :before,
-	.u-sticky\@s-only.u-sticky\@s-only: :after {
+	.u-sticky\@s-only.u-sticky\@s-only:before,
+	.u-sticky\@s-only.u-sticky\@s-only:after {
 		content: '';
 		display: table
 	}
@@ -11577,8 +11577,8 @@ progress:not([value]) {
 		top: 0;
 		z-index: 1
 	}
-	.u-sticky\@m.u-sticky\@m: :before,
-	.u-sticky\@m.u-sticky\@m: :after {
+	.u-sticky\@m.u-sticky\@m:before,
+	.u-sticky\@m.u-sticky\@m:after {
 		content: '';
 		display: table
 	}
@@ -11604,8 +11604,8 @@ progress:not([value]) {
 		top: 0;
 		z-index: 1
 	}
-	.u-sticky\@m-only.u-sticky\@m-only: :before,
-	.u-sticky\@m-only.u-sticky\@m-only: :after {
+	.u-sticky\@m-only.u-sticky\@m-only:before,
+	.u-sticky\@m-only.u-sticky\@m-only:after {
 		content: '';
 		display: table
 	}
@@ -11631,8 +11631,8 @@ progress:not([value]) {
 		top: 0;
 		z-index: 1
 	}
-	.u-sticky\@l.u-sticky\@l: :before,
-	.u-sticky\@l.u-sticky\@l: :after {
+	.u-sticky\@l.u-sticky\@l:before,
+	.u-sticky\@l.u-sticky\@l:after {
 		content: '';
 		display: table
 	}
@@ -11658,8 +11658,8 @@ progress:not([value]) {
 		top: 0;
 		z-index: 1
 	}
-	.u-sticky\@l-only.u-sticky\@l-only: :before,
-	.u-sticky\@l-only.u-sticky\@l-only: :after {
+	.u-sticky\@l-only.u-sticky\@l-only:before,
+	.u-sticky\@l-only.u-sticky\@l-only:after {
 		content: '';
 		display: table
 	}
@@ -11685,8 +11685,8 @@ progress:not([value]) {
 		top: 0;
 		z-index: 1
 	}
-	.u-sticky\@xl.u-sticky\@xl: :before,
-	.u-sticky\@xl.u-sticky\@xl: :after {
+	.u-sticky\@xl.u-sticky\@xl:before,
+	.u-sticky\@xl.u-sticky\@xl:after {
 		content: '';
 		display: table
 	}
