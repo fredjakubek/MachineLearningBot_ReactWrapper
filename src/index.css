@@ -105,6 +105,17 @@ body {
     margin-top: 10px;
 }
 
+.forgotPassword{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #8eaebd;
+}
+
 .remember {
     display: flex;
     width: 90%;
@@ -189,7 +200,7 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
-    color: #000000;
+    color: #8EAEBD;
 }
 
 .dropdown-div {
@@ -214,7 +225,7 @@ body {
     display: flex;
     align-items: center;
     letter-spacing: 0.68px;
-    color: #000000;
+    color: #8EAEBD;
 }
 
 .dropdown-contentw {
@@ -226,7 +237,7 @@ body {
 }
 
 .dropdown-contet-itemw {
-    color: #3380e5;
+    color: #8EAEBD;
 }
 
 .dropdown-content {
@@ -261,7 +272,7 @@ body {
 
 .parag {
     text-align: center;
-    color: #2b80fd;
+    color: #8EAEBD;
     font-family: "Roboto", sans-serif;
     font-size: 19px;
     font-style: normal;
@@ -327,7 +338,7 @@ body {
 
 .margincal p {
     font-size: 20px;
-    color: #2f80ed;
+    color: #8EAEBD;
 }
 
 .arrow-back {
@@ -450,7 +461,7 @@ body {
 }
 
 .Continue-but {
-    background-color: black;
+    background-color: #8EAEBD;
     width: 90%;
     display: flex;
     justify-content: center;
@@ -506,6 +517,7 @@ body {
     margin-top: 23px !important;
     border-radius: 20px;
     overflow: hidden;
+    transform: scale(0.8)
 }
 
 .margin {
@@ -612,7 +624,7 @@ body {
 }
 
 .activeScreen {
-    background: #444bd3;
+    background: #8EAEBD;
     color: white !important;
 }
 
@@ -640,7 +652,7 @@ body {
     line-height: 120%;
     width: 90%;
     margin: 0 auto;
-    color: #000000;
+    color: #8EAEBD;
 }
 
 .My-todos {
@@ -675,7 +687,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
-    color: #3380e5;
+    color: #8EAEBD;
     border-radius: 10px;
 }
 
@@ -847,7 +859,7 @@ body {
 
 .box i {
     font-size: 18px !important;
-    color: #3380e5;
+    color: #8EAEBD;
 }
 
 .box-minus {
@@ -1049,7 +1061,7 @@ body {
 }
 
 .view-all {
-    color: #3380e5;
+    color: #8EAEBD;
     text-align: center;
     font-family: Roboto;
     font-style: normal;
@@ -1094,7 +1106,7 @@ body {
 
 .insta-li ul .active {
     color: #ffffff;
-    background-color: #444bd3;
+    background-color: #8EAEBD;
 }
 
 .fill-red {
@@ -1177,7 +1189,7 @@ body {
 }
 
 .cmnt-btn {
-    color: #2c8dff;
+    color: #8EAEBD;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -1190,7 +1202,7 @@ body {
 }
 
 .selected {
-    background-color: #2f80ed;
+    background-color: #8EAEBD;
     color: #fff !important;
     border-radius: 50%;
 }

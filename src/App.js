@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate , BrowserRouter } from "react-router-dom";
 
 // import { useSelector } from 'react-redux'
 import { db } from "./config/Firebase";
@@ -12,8 +12,10 @@ import Blog from "./screens/Blog";
 import TaskScreen from "./screens/TaskScreen";
 import SettingScreen from "./screens/SettingScreen";
 import PrivacyPolicy from "./screens/PrivacyPolicy";
+import Pricing from "./screens/Pricing";
 import InstaScreen from "./screens/InstaScreen";
 import LandingPage from "./screens/LandingPage";
+import Subscribe from "./screens/Subscribe";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { setBlogs } from "./store/Slices/BlogSlice";
 import { setBaby } from "./store/Slices/BabySlice";
@@ -172,19 +174,18 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/subscribe" element={<Subscribe />} />
+        <Route path="/dob" element={<DOB />} />
+        <Route path="/landingpage" element={<LandingPage />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/subscribe" element={<Subscribe />} />
+        <Route path="/" element={<LandingPage />} />
+
         <Route
-          path="/dob"
+          path="/home"
           element={
             <PrivateRoute redirectTo="/login">
-              <DOB />
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/"
-          element={
-            <PrivateRoute redirectTo="/">
-              <LandingPage />
+              <HomeScreen />
             </PrivateRoute>
           }
         />
@@ -229,15 +230,6 @@ function App() {
           }
         />
         <Route
-          path="/landingpage"
-          element={
-            <PrivateRoute redirectTo="/login">
-              <LandingPage />
-            </PrivateRoute>
-          }
-        />
-
-        <Route
           path="/instascreen"
           element={
             <PrivateRoute redirectTo="/login">
@@ -246,6 +238,7 @@ function App() {
           }
         />
       </Routes>
+      
     </div>
   );
 }

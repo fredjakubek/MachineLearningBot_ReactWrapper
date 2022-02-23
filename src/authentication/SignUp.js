@@ -12,6 +12,7 @@ import {
 } from "../store/Slices/UserSlice";
 import { db } from "../config/Firebase";
 import "../index.css";
+import Logo from '../images/icons/apple-touch-icon.png';
 
 export default function SignUp() {
   let [username, setUsername] = useState("");
@@ -69,9 +70,9 @@ export default function SignUp() {
       <div className="border">
         <div className="div-1">
           <div className="logo-main">
-            <div className="logo">
-              <i className="fas fa-shopping-bag"> </i>{" "}
-            </div>{" "}
+          <Link to="/landingpage">
+              <img src={Logo}/>
+          </Link>
           </div>{" "}
           {/* login heading  */}{" "}
           <div>
@@ -115,16 +116,7 @@ export default function SignUp() {
               label="Password"
             />
           </div>
-          {/* remember me */}
-          <div className="remember">
-            <div>
-              <p> Find Out More</p>{" "}
-            </div>{" "}
-          </div>
-          {/* log-in button */}
-          {/* <div onClick={signup_user} className='log-in-button'>
-                                    <button className='text'></button>
-                                </div> */}{" "}
+          
           <div onClick={signup_user} className="log-in-button">
             <button className="text">
               {" "}

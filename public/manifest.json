@@ -1,6 +1,6 @@
 {
-    "short_name": "Romus App",
-    "name": "Romus App PWA",
+    "short_name": "Dhiti",
+    "name": "Dhiti",
     "icons": [{
         "src": "/images/logo.png",
         "type": "image/png",
@@ -8,6 +8,6 @@
     }],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#000000",
+    "theme_color": "#8EAEBD",
     "background_color": "#ffffff"
 }

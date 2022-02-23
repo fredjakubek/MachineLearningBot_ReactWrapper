@@ -88,7 +88,7 @@ export default function TaskScreen() {
       <div className="suggest">
         <div className="div1">
           <Link to="/todos">
-            <button className="button-suggest">suggested</button>
+            <button className="button-suggest">Suggested</button>
           </Link>
         </div>
         <div className={`div2 ${isActive && "activeScreen"}`}>

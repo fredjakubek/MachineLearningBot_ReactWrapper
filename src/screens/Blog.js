@@ -30,7 +30,8 @@ export default function Blogs() {
             <div className="blog-content">
                 <h3>{blog?.article_title}</h3>
 
-                <p>{blog?.article_content}</p>
+                <div dangerouslySetInnerHTML={{ __html: blog?.article_content, }} />
+                
             </div>
 
             <BottomNav />

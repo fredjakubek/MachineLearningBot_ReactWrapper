@@ -46,6 +46,7 @@ export default function Login() {
   async function getUser() {
     const docRef = doc(db, "users", localStorage.getItem("userID"));
     const docSnap = await getDoc(docRef);
+    
 
     if (docSnap.exists()) {
       console.log("Document data:", docSnap.data());
@@ -90,7 +91,7 @@ export default function Login() {
       dispatch(
         setFullName(docSnap.data().fullName ? docSnap.data().fullName : "")
       );
-      navigate("/");
+      navigate("/home");
     } else {
       // doc.data() will be undefined in this case
       console.log("No such document!");
@@ -149,10 +150,8 @@ export default function Login() {
 
           {/* remember me */}
 
-          <div className="remember">
-            <div>
-              <p>Find Out More</p>
-            </div>
+          <div className="forgotPassword">
+              Forgot password?
           </div>
 
           {/* log-in button */}

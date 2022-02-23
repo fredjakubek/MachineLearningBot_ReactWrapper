@@ -25,7 +25,7 @@ function LandingPage() {
 
                     <nav className="u-hide@xs-only  u-hide@s-only">
                         <a className="c-head__link" href="#features">Features</a>
-                        <a className="c-head__link" href="#contact">Contact</a>
+                        <Link to="/pricing" className="c-head__link">Pricing</Link>
                         <Link to="/login" className="c-head__link">Login</Link>
                     </nav>
 
@@ -68,7 +68,7 @@ function LandingPage() {
 
     <div className="o-grid  o-grid--item  u-size-10  u-size-12@m">
 
-        <div className="u-h2  u-mB-2  u-mB-4@m">The #1 Father Pregnancy App</div>
+        <div className="u-h2  u-mB-2  u-mB-4@m">The #1  Pregnancy App For Fathers</div>
 
         <svg className="c-stars  u-mB-2  u-mB-4@m  u-m-a  u-size-10" height="32" viewBox="0 0 268 33" width="268" xmlns="http://www.w3.org/2000/svg">
             <g fillRule="evenodd" transform="translate(0 .027178)">
@@ -82,7 +82,8 @@ function LandingPage() {
 
         <div className="u-s5  u-mB-4">Daily coaching for expectant fathers all the way to birth</div>
 
-        <a className="c-button  c-button--alt  c-button--xlarge  u-size-12@xs-only  u-size-8@s-only  u-size-3@m  pink" href="#download">Try Dhiti Today</a>
+        <Link to="/pricing"  className="c-button  c-button--alt  c-button--xlarge  u-size-12@xs-only  u-size-8@s-only  u-size-3@m  pink" >Try it free for 14 days</Link>
+        
 
     </div>
 
@@ -133,8 +134,8 @@ function LandingPage() {
 
             <div className="u-h3  u-mB-2">Step by Step</div>
 
-            <p>For each of the 280 of the pregnancy receive advice.</p>
-<p>We have compiled the advice from all major sources into one-source-of-truth and timed across the 280 timeline to provide you with best-practice tipps right when you need it in the overall process.</p>
+            <p>For each of the 280 days of the pregnancy receive advice.</p>
+<p>We have compiled the advice from all major sources into one-source-of-truth and timed across the 280 day timeline to provide you with best-practice tipps exactly when you need it in the overall process.</p>
 
         </div>
 
@@ -413,7 +414,7 @@ function LandingPage() {
 
         <div className="u-h3  u-mB-2  u-textCenter">Loved by Expectant Dads all around the world</div>
 
-        <div className="u-textCenter"><p>Download Dhiti today to get coached through pregancy.</p>
+        <div className="u-textCenter"><p>Download Dhiti today to get coached through your pregancy.</p>
 </div>
 
         <a className="c-button  c-button--alt  c-button--xlarge  js-download  u-size-12@xs-only  u-size-8@s-only  u-hide@m" href="" data-os-ios="" data-os-droid="" target="_blank">Download Dhiti</a>

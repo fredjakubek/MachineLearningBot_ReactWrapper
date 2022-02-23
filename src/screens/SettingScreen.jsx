@@ -43,7 +43,7 @@ export default function SettingScreen() {
         dispatch(setBabyName(e.target.value))
         const docRef = doc(db, "users", localStorage.getItem("userID"));
         const payload = {
-            pregnancy_dueDate: user.pregnancy_dueDate,
+            pregnancy_dueDate: user.pregnancy_dueDate.toDate().toString(),
             emailAddress: user.emailAddress,
             username: user.username,
             user_todos: user.user_todos,
@@ -80,7 +80,8 @@ export default function SettingScreen() {
                         <i className='fa fa-chevron-left right-arraw'></i>
                     </Link>
                 </div>
-                <div className='Profile-Image'>
+                <div className='Profile-'>
+                    {/* above div used to be  <div className='Profile-Image'>*/}
                     <AccountCircleTwoToneIcon style={{ height: "50px", width: "50px" }}/>
                     {/* Commented out as it was replaced with Material UI Icon now
                     <img src='https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png' />

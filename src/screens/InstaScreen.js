@@ -16,7 +16,7 @@ export default function InstaScreen() {
         </div>
         <div className="insta-header_avatarLogo">
           <Link to="/settingscreen">
-            <AccountCircleOutlinedIcon style={{ width: 40, height: 40 }}/>
+            <AccountCircleTwoToneIcon style={{ width: 40, height: 40 }}/>
              {/* Commented out as it was replaced with Material UI Icon now
             <img
               className="avatar-img"

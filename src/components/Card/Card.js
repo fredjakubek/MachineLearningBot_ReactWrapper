@@ -19,9 +19,7 @@ function Card({ blog }) {
                         <p>{blog.article_title}</p>
                     </div>
                     <div className='dic'>
-                        <p>
-                            {turnCate(blog.article_content, 300)}
-                        </p>
+                        <div dangerouslySetInnerHTML={{ __html: turnCate(blog.article_content, 300), }} />
                     </div>
                 </div>
             </div>

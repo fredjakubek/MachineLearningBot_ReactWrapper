@@ -144,19 +144,20 @@ function HomeScreen() {
             ></i>
           </div>
         </div>
-      </div>
-      <div className="flex-1">
+
+        <div className="avatar">
           <Link to="/settingscreen">
-              <AccountCircleOutlinedIcon style={{ width: 40, height: 40 }} />
-              {/* Commented out as it was replaced with Material UI Icon now
-              <img
-                className="avatar-img"
-                src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
-                alt="avatar"
-              />
-              */}
-            </Link>
+            <AccountCircleTwoToneIcon style={{ width: 40, height: 40 }} />
+            {/* Commented out as it was replaced with Material UI Icon now
+            <img
+              className="avatar-img"
+              src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+              alt="avatar"
+            />
+            */}
+          </Link>
         </div>
+      </div>
 
       {/* calendar */}
       <div className="calenderWrapper">

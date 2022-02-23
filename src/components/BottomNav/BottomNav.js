@@ -32,7 +32,7 @@ function BottomNav() {
     }
     return (
         <div className="bottom-nav">
-            <Link to="/">
+            <Link to="/home">
                 <div onClick={handleHomeClick} className={`bottom-nav-item ${isHomeActive && 'active'} `}>
                     <HomeOutlinedIcon />
                     <span>Today</span>
