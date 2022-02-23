@@ -64,9 +64,9 @@ const { resolve } = require('path');
 // Get your firebase credentials from 
 // the firebase console for your project
 admin.initializeApp({
-  apiKey: "AIzaSyARXB7_r8gRAjLLBKXZ7-4rcwvY6qjXFJA",
-  authDomain: "romus-app.firebaseapp.com",
-  projectId: "romus-app"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID
 });
 
 /**
