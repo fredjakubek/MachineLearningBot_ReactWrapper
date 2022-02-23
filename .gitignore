@@ -12,6 +12,7 @@
 /build
 
 # misc
+firebaseAdmin_key.json
 .DS_Store
 .env
 .env.local
