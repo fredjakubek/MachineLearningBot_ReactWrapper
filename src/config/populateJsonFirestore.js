@@ -11,7 +11,6 @@ service cloud.firestore {
 }
 
 
-
 original Firestore rules that need to be reinstated after completion 
 
 // Signup route
@@ -67,7 +66,7 @@ admin.initializeApp({
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  credential: admin.credential.cert(require('../../firebaseAdmin_key.json'))
+  credential: admin.credential.cert(require('../../firebaseAdmin_key2.json'))
 });
 
 /**
@@ -192,3 +191,5 @@ populateFireStore.populate();
 
 // command to run
 //node json-to-firestore/populateJsonFirestore.js ./json-to-firestore/data.json add demo-users
+//node populateJsonFirestore.js data.json add daily_articles
+//node populateJsonFirestore.js babySize.json add baby_size

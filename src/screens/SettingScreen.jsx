@@ -14,7 +14,7 @@ export default function SettingScreen() {
     const navigate = useNavigate()
     const user = useSelector((state) => state.user)
     const menu = [
-        { title: "Settings", redirectTo: "/landingpage" },
+        { title: "Settings", redirectTo: "/" },
         { title: "FAQ", redirectTo: "/" },
         { title: "Tell A Friend", redirectTo: "/" },
         { title: "Privacy Policy", redirectTo: "/privacypolicy" },
@@ -38,6 +38,10 @@ export default function SettingScreen() {
         dispatch(setBabyGender(e.target.value))
 
     }
+   
+    const date_2 = new Date(user.pregnancy_dueDate)
+    console.log(date_2)
+
     const handleNameChange = (e) => {
 
         dispatch(setBabyName(e.target.value))
@@ -133,7 +137,7 @@ export default function SettingScreen() {
                 </div>
                 <div className='setting-items'>
                     <h3>Due Date</h3>
-                    <span>{user.pregnancy_dueDate}</span>
+                    <span>{date_2.toLocaleString()}</span>
                 </div>
 
             </div>

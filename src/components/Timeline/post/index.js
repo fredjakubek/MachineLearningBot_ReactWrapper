@@ -7,7 +7,7 @@ import Comments from "./comments";
 export default function Post({ content }) {
   return (
     <div className="insta-post">
-      <Header username={content.username} />
+      <Header username={content.username} userImg={content.userImg} />
       <Image src={content.imgSrc} caption={content.caption} />
       <Actions
         docId={content.id}

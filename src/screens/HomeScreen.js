@@ -125,7 +125,7 @@ function HomeScreen() {
   return (
     <div className="flex-1">
       <div className="flex flex-row justify-center margin10">
-        <div className="flex flex-row week">
+        <div className="flex flex-row week ">
           <div>
             <i
               onClick={handlePrevious}
@@ -145,7 +145,7 @@ function HomeScreen() {
           </div>
         </div>
 
-        <div className="avatar">
+        <div className="avatar-right">
           <Link to="/settingscreen">
             <AccountCircleTwoToneIcon style={{ width: 40, height: 40 }} />
             {/* Commented out as it was replaced with Material UI Icon now

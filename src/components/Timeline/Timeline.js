@@ -21,7 +21,7 @@ export default function Timeline() {
         photos.length === 0 ? (
           <>
             <p className="flex justify-center font-bold">
-              Follow other people to see Photos
+              Follow some topics to see more content
             </p>
           </>
         ) : photos ? (

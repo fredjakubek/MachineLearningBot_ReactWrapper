@@ -2,6 +2,7 @@ import { useState } from "react";
 import { formatDistance } from "date-fns";
 // import { Link } from "react-router-dom";
 import AddComment from "./add-comment";
+import avatar from 'animal-avatar-generator'
 
 export default function Comments({
   docId,
@@ -21,8 +22,13 @@ export default function Comments({
       <div className="post-comments">
         {comments.slice(0, commentsSlice).map((item, index) => (
           <p key={`${index}-${item.displayName}`} className="post-comment">
-            <span className="mr-1 font-bold"> {item.displayName} </span>
-            <span> {item.comment} </span>
+            <div className="flex flex-row">
+              <img src={item.photoURL} class="commentsAvatarImg" />
+              <div className="commentsText">
+                <div className="commentsDisplayName"> {item.displayName} </div>
+                <div> {item.comment} </div>
+              </div>
+            </div>
           </p>
         ))}
         {comments.length >= 3 && commentsSlice < comments.length && (

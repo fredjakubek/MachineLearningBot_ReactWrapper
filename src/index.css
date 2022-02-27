@@ -283,8 +283,14 @@ body {
     margin-top: 41px;
 }
 
+.avatar-right {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
 .week {
     align-items: center;
+    margin-left: auto;
 }
 
 .week div {
@@ -1015,6 +1021,8 @@ body {
 
 .post-image {
     height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .post-acions {
@@ -1054,7 +1062,7 @@ body {
 } */
 
 .post-comment {
-    background: #ececec;
+    background: #f6f6f6;
     border-radius: 8px;
     margin: 5px;
     padding: 12px;
@@ -1138,6 +1146,23 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.commentsAvatarImg {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.commentsText {
+    margin-left: 15px;
+}
+
+
+.commentsDisplayName {
+    font-weight: 700;
+    margin-right: 0.25rem;
 }
 
 
