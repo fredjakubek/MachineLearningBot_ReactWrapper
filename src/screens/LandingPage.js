@@ -39,7 +39,7 @@ function LandingPage() {
 
                 <div className="o-grid__item  u-size-5  u-flex  u-justifyEnd  u-row">
 
-                   <a className="c-button  js-download  u-hide@m" href="#" data-os-ios="https://itunes.apple.com/app/pregnancy/id505864483" data-os-droid="https://play.google.com/store/apps/details?id=com.hp.pregnancy.lite" target="_blank">Download</a> 
+                    <Link to="/login" className="c-button  js-download  u-hide@m" target="_blank">Login</Link> 
 
                     
                     <a className="c-head__svg  u-mR-2  u-hide@xs-only  u-hide@s-only" href="" target="_blank">
@@ -101,7 +101,7 @@ function LandingPage() {
             <div className="u-h3  u-mB-2">Daily Summaries</div>
 
             <p>40 weeks leading up to birth.</p>
-<p>Receive daily summaries of what you need to be aware of at that particular day in the pregnancy process. Always be informed on the key things: Your Baby's Development, Mother's Common Symptoms, Advice For Partners, Upcoming Doctors Appointments, Daily Tipps  </p>
+<p class="margin_bottom_seperator">Receive daily summaries of what you need to be aware of at that particular day in the pregnancy process. Always be informed on the key things: Your Baby's Development, Mother's Common Symptoms, Advice For Partners, Upcoming Doctors Appointments, Daily Tipps  </p>
 
         </div>
 
@@ -345,7 +345,7 @@ function LandingPage() {
             <div className="u-h3  u-mB-2">To-Do List</div>
 
             <p>For each week leading up to pregnancy we have compiled a list of recommended To-Do's.</p>
-<p>Stay informed by simply following the list of recommended items for each week and easily remain on-track by checking things off from the list.</p>
+<p class="margin_bottom_seperator">Stay informed by simply following the list of recommended items for each week and easily remain on-track by checking things off from the list.</p>
 
         </div>
 
@@ -414,7 +414,7 @@ function LandingPage() {
 
         <div className="u-h3  u-mB-2  u-textCenter">Loved by Expectant Dads all around the world</div>
 
-        <div className="u-textCenter"><p>Download Dhiti today to get coached through your pregancy.</p>
+        <div className="u-textCenter"><p class="margin_bottom_seperator">Download Dhiti today to get coached through your pregancy.</p>
 </div>
 
         <a className="c-button  c-button--alt  c-button--xlarge  js-download  u-size-12@xs-only  u-size-8@s-only  u-hide@m" href="" data-os-ios="" data-os-droid="" target="_blank">Download Dhiti</a>
@@ -452,23 +452,15 @@ function LandingPage() {
 
             <div className="u-h3  u-mB-2">Supporting expectant dads through pregnancy.</div>
 
-            <p>For App support please contact our support. For Business & Advertising queries please contact marketing.</p>
+            <p class="margin_bottom_seperator">For App support please contact our support. For Business & Advertising queries please contact marketing.</p>
 
-            <a className="c-button  c-button--shadow  c-button--round  c-button--xlarge  u-mB-1  u-mB-0@s" href="/cdn-cgi/l/email-protection#0a797f7a7a65787e4a626f6b667e62276b646e277a6b786f647e63646d24696567" title="mailto:support@health-and-parenting.com">Support</a>
+            <a className="c-button  c-button--shadow  c-button--round  c-button--xlarge  u-mB-1  u-mB-0@s" href="/cdn-cgi/l/email-protection#0a797f7a7a65787e4a626f6b667e62276b646e277a6b786f647e63646d24696567" title="mailto:support@dhiti.com">Support</a>
 
-            <a className="c-button  c-button--shadow  c-button--secondary  c-button--round  c-button--xlarge  u-mL-2@s" href="/cdn-cgi/l/email-protection#8ae7ebf8e1effee3e4edcae2efebe6fee2a7ebe4eea7faebf8efe4fee3e4eda4e9e5e7" title="mailto:marketing@health-and-parenting.com">Marketing</a>
-
-        </div>
-
-        <div className="o-grid__item  u-size-6@m">
-
-            <div className="c-demo">
-
-                <img className="c-demo__img" src={FooterImage}/>
-
-            </div>
+            <a className="c-button  c-button--shadow  c-button--secondary  c-button--round  c-button--xlarge  u-mL-2@s" href="/cdn-cgi/l/email-protection#8ae7ebf8e1effee3e4edcae2efebe6fee2a7ebe4eea7faebf8efe4fee3e4eda4e9e5e7" title="mailto:marketing@dhiti.com">Marketing</a>
 
         </div>
+
+
 
     </div>
 

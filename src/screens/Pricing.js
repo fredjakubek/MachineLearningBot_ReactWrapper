@@ -1,11 +1,214 @@
-import React from 'react'
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardHeader from '@mui/material/CardHeader';
+import CssBaseline from '@mui/material/CssBaseline';
+import Grid from '@mui/material/Grid';
+import StarIcon from '@mui/icons-material/StarBorder';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+import GlobalStyles from '@mui/material/GlobalStyles';
+import Container from '@mui/material/Container';
+import { createTheme } from '@mui/material/styles';
+import Logo from './images/logo.svg';
 
-function Pricing() {
-    return (
-        <div>
-            Here will be the different subcription optitons
-        </div>
-    )
+function Copyright(props) {
+  return (
+    <Typography variant="body2" color="text.secondary" align="center" {...props}>
+      {'Copyright © '}
+      <Link color="inherit" to="/login">
+        Dhiti
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
 }
 
-export default Pricing
+const theme = createTheme({
+    palette: {
+      primary: {
+        // light: will be calculated from palette.primary.main,
+        main: '#8EAEBD',
+        // dark: will be calculated from palette.primary.main,
+        // contrastText: will be calculated to contrast with palette.primary.main
+      },
+      neutral: {
+        main: '#8EAEBD',
+        contrastText: '#8EAEBD',
+      },
+    },
+});
+
+const tiers = [
+  {
+    title: '14-Day Free Demo',
+    subheader: 'No stress',
+    price: '0',
+    description: [
+      'Daily Coaching Content',
+      'Daily To-Dos',
+      'Access To Forum',
+    ],
+    buttonText: 'Try Free Demo',
+    buttonVariant: 'outlined',
+  },
+  {
+    title: 'Monthly Membership',
+    price: '30',
+    description: [
+        'Daily Coaching Content',
+        'Daily To-Dos',
+        'Access To Forum',
+        'Lifetime Support'
+    ],
+    buttonText: 'Get started',
+    buttonVariant: 'contained',
+  },
+];
+
+
+function PricingContent() {
+  return (
+    <React.Fragment>
+      <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
+      <CssBaseline />
+      <AppBar
+        position="static"
+        color="default"
+        elevation={0}
+        sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
+      >
+        <Toolbar sx={{ flexWrap: 'wrap' }}>
+          <img className="c-head__img" src={Logo}/>
+          <nav>
+            <Link
+              variant="button"
+              color="text.primary"
+              href="/"
+              sx={{ my: 1, mx: 1.5 }}
+            >
+              Features
+            </Link>
+            <Link
+              variant="button"
+              color="text.primary"
+              href="/pricing"
+              sx={{ my: 1, mx: 1.5 }}
+            >
+              Pricing
+            </Link>
+          </nav>
+          <Button href= "/login" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
+            Login
+          </Button>
+        </Toolbar>
+      </AppBar>
+      {/* Hero unit */}
+      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
+        <Typography
+          component="h1"
+          variant="h2"
+          align="center"
+          color="text.primary"
+          gutterBottom
+        >
+          Pricing
+        </Typography>
+        <Typography variant="h5" align="center" color="text.secondary" component="p">
+          Try the app for free for 14-days or join directly to experience the great benefits. 
+        </Typography>
+      </Container>
+      {/* End hero unit */}
+      <Container maxWidth="md" component="main">
+        <Grid container spacing={5} alignItems="flex-end">
+          {tiers.map((tier) => (
+            // Enterprise card is full width at sm breakpoint
+            <Grid
+              item
+              key={tier.title}
+              xs={12}
+              sm={tier.title === 'Enterprise' ? 12 : 6}
+              md={6}
+            >
+              <Card>
+                <CardHeader
+                  title={tier.title}
+                  subheader={tier.subheader}
+                  titleTypographyProps={{ align: 'center' }}
+                  action={tier.title === 'Monthly Membership' ? <StarIcon /> : null}
+                  subheaderTypographyProps={{
+                    align: 'center',
+                  }}
+                  sx={{
+                    backgroundColor: (theme) =>
+                      theme.palette.mode === 'light'
+                        ? theme.palette.grey[200]
+                        : theme.palette.grey[700],
+                  }}
+                />
+                <CardContent>
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'baseline',
+                      mb: 2,
+                    }}
+                  >
+                    <Typography component="h2" variant="h3" color="text.primary">
+                      ${tier.price}
+                    </Typography>
+                    <Typography variant="h6" color="text.secondary">
+                      /mo
+                    </Typography>
+                  </Box>
+                  <ul>
+                    {tier.description.map((line) => (
+                      <Typography
+                        component="li"
+                        variant="subtitle1"
+                        align="center"
+                        key={line}
+                      >
+                        {line}
+                      </Typography>
+                    ))}
+                  </ul>
+                </CardContent>
+                <CardActions>
+                  <Button fullWidth variant={tier.buttonVariant} color="primary">
+                    {tier.buttonText}
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+      {/* Footer */}
+      <Container
+        maxWidth="md"
+        component="footer"
+        sx={{
+          borderTop: (theme) => `1px solid ${theme.palette.divider}`,
+          mt: 8,
+          py: [3, 6],
+        }}
+      >
+        
+        <Copyright sx={{ mt: 5 }} />
+      </Container>
+      {/* End footer */}
+    </React.Fragment>
+  );
+}
+
+export default function Pricing() {
+  return <PricingContent />;
+}

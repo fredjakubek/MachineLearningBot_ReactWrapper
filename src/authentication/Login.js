@@ -128,6 +128,8 @@ export default function Login() {
               value={email}
               className="input"
               required
+              inputProps={{style: {fontSize: 25}}} // font size of input text
+              InputLabelProps={{style: {fontSize: 15}}} // font size of input label
               id="outlined-required"
               label="Email Address"
               type="email"
@@ -142,6 +144,8 @@ export default function Login() {
               value={password}
               className="input"
               required
+              inputProps={{style: {fontSize: 25}}} // font size of input text
+              InputLabelProps={{style: {fontSize: 15}}} // font size of input label
               id="outlined-required"
               label="Password"
               type="password"

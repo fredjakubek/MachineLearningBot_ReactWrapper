@@ -56,6 +56,11 @@ body {
     font-size: 35px;
 }
 
+.margin_bottom_seperator{
+    margin-bottom: 35px;
+}
+
+
 .log-in {
     width: 117px;
     height: 47px;
@@ -91,6 +96,17 @@ body {
     letter-spacing: -0.32px;
     margin-bottom: 5px !important;
     padding: 12.5px 10px;
+}
+
+.input_login {
+    font-family: "Roboto", sans-serif;
+    width: 90%;
+    border: 1px solid #cacaca;
+    padding: 4px;
+    color: #212529;
+    border: 1px solid rgb(206, 206, 206);
+    font-weight: 500 !important;
+    font-size: 2rem !important
 }
 
 .text {
